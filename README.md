@@ -72,4 +72,5 @@ Pada soal no.5 yang perlu kita gunakan adalah `awk` dengan menggunakan `\\..\\` 
 </br>Untuk pengerjaan setiap 6 menit dari menit 2 s/d 30, dapat kita gunakan crontab `2-30/6 * * * *`
 </br>[source code soal 5](soal5.sh)
 ## Crontab
+Berikut adalah crontab dari soal no 1, 4 dan 5
 </br>[Crontab dari soal 1,4,5](crontab.txt)

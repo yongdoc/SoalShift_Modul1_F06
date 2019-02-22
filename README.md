@@ -1,14 +1,16 @@
 # SoalShift_Modul1_F06
 
-1. Anda diminta tolong oleh teman anda untuk mengembalikan filenya yang telah
+## Soal 1
+Anda diminta tolong oleh teman anda untuk mengembalikan filenya yang telah
 dienkripsi oleh seseorang menggunakan bash script, file yang dimaksud adalah
 nature.zip. Karena terlalu mudah kalian memberikan syarat akan membuka seluruh
 file tersebut jika pukul 14:14 pada tanggal 14 Februari atau hari tersebut adalah hari
 jumat pada bulan Februari.
 Hint: Base64, Hexdump
-## Penyelesaian
+### Penyelesaian
 [source code soal 1](soal1.sh)
-2. Anda merupakan pegawai magang pada sebuah perusahaan retail, dan anda diminta
+## Soal 2
+Anda merupakan pegawai magang pada sebuah perusahaan retail, dan anda diminta
 untuk memberikan laporan berdasarkan file WA_Sales_Products_2012-14.csv.
 Laporan yang diminta berupa:
 a. Tentukan negara dengan penjualan(quantity) terbanyak pada tahun
@@ -18,9 +20,9 @@ terbanyak pada soal poin a.
 c. Tentukan tiga product yang memberikan penjualan(quantity)
 terbanyak berdasarkan tiga product line yang didapatkan pada soal
 poin b.
-## Penyelesaian
-
-3. Buatlah sebuah script bash yang dapat menghasilkan password secara acak
+### Penyelesaian
+## Soal 3
+Buatlah sebuah script bash yang dapat menghasilkan password secara acak
 sebanyak 12 karakter yang terdapat huruf besar, huruf kecil, dan angka. Password
 acak tersebut disimpan pada file berekstensi .txt dengan ketentuan pemberian nama
 sebagai berikut:
@@ -31,9 +33,9 @@ disimpan pada file bernama password2.txt dan begitu seterusnya.
 c. Urutan nama file tidak boleh ada yang terlewatkan meski filenya
 dihapus.
 d. Password yang dihasilkan tidak boleh sama.
-## Penyelesaian
-
-4. Lakukan backup file syslog setiap jam dengan format nama file “jam:menit tanggal-
+### Penyelesaian
+## Soal 4
+Lakukan backup file syslog setiap jam dengan format nama file “jam:menit tanggal-
 bulan-tahun”. Isi dari file backup terenkripsi dengan konversi huruf (string
 manipulation) yang disesuaikan dengan jam dilakukannya backup misalkan sebagai
 berikut:
@@ -45,9 +47,9 @@ empat belas, dan seterusnya.
 c. setelah huruf z akan kembali ke huruf a
 d. Backup file syslog setiap jam.
 e. dan buatkan juga bash script untuk dekripsinya.
-## Penyelesaian
-
-5. Buatlah sebuah script bash untuk menyimpan record dalam syslog yang memenuhi
+### Penyelesaian
+## Soal 5
+Buatlah sebuah script bash untuk menyimpan record dalam syslog yang memenuhi
 kriteria berikut:
 a. Tidak mengandung string “sudo”, tetapi mengandung string “cron”,
 serta buatlah pencarian stringnya tidak bersifat case sensitive,
@@ -58,5 +60,5 @@ c. Masukkan record tadi ke dalam file logs yang berada pada direktori
 /home/user/modul1.
 d. Jalankan script tadi setiap 6 menit dari menit ke 2 hingga 30, contoh
 13:02, 13:08, 13:14, dst.
-## Penyelesaian
+### Penyelesaian
 

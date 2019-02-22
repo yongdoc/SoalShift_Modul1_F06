@@ -10,7 +10,7 @@ Hint: Base64, Hexdump
 ### Penyelesaian
 Hal pertama yang harus dilakukan adalah
 </br> unzip nature.zip
-</br>setelah itu
+</br>*setelah itu*
 </br>[source code soal 1](soal1.sh)
 ## Soal 2
 Anda merupakan pegawai magang pada sebuah perusahaan retail, dan anda diminta

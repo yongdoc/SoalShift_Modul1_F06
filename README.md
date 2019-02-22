@@ -8,7 +8,9 @@ file tersebut jika pukul 14:14 pada tanggal 14 Februari atau hari tersebut adala
 jumat pada bulan Februari.
 Hint: Base64, Hexdump
 ### Penyelesaian
-tes tes halo
+Hal pertama yang harus dilakukan adalah
+</br> unzip nature.zip
+</br>setelah itu
 </br>[source code soal 1](soal1.sh)
 ## Soal 2
 Anda merupakan pegawai magang pada sebuah perusahaan retail, dan anda diminta

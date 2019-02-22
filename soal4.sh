@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #pengganti huruf merupakan waktu saat ini + urutan huruf (ex. pukul 9 -> huruf c = 9+3 = 12)
-timer=`date "+%X" | awk 'BEGIN{FS=":"}END{print $1}'`
+timer="`date \"+%H\"`"
 #echo $timer
 timer=${timer#0}
 

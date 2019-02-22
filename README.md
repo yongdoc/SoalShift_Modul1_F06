@@ -8,7 +8,8 @@ file tersebut jika pukul 14:14 pada tanggal 14 Februari atau hari tersebut adala
 jumat pada bulan Februari.
 Hint: Base64, Hexdump
 ### Penyelesaian
-[source code soal 1](soal1.sh)
+tes tes halo
+</br>[source code soal 1](soal1.sh)
 ## Soal 2
 Anda merupakan pegawai magang pada sebuah perusahaan retail, dan anda diminta
 untuk memberikan laporan berdasarkan file WA_Sales_Products_2012-14.csv.

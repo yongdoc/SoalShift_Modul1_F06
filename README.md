@@ -9,8 +9,9 @@ jumat pada bulan Februari.
 Hint: Base64, Hexdump
 ### Penyelesaian
 Hal pertama yang harus dilakukan adalah
-</br> unzip nature.zip
-</br>*setelah itu*
+</br>` unzip nature.zip `
+</br>setelah itu setiap file yang terdapat di dalam folder nature di dekripsi dengan menggunakan base64 dan xxd untuk me reverse perintah yang ada, seperti dibawah ini
+</br>` base 64 -d $name | xxd -r > nature/pictures"$x".jpg`
 </br>[source code soal 1](soal1.sh)
 ## Soal 2
 Anda merupakan pegawai magang pada sebuah perusahaan retail, dan anda diminta
@@ -24,6 +25,7 @@ c. Tentukan tiga product yang memberikan penjualan(quantity)
 terbanyak berdasarkan tiga product line yang didapatkan pada soal
 poin b.
 ### Penyelesaian
+
 ## Soal 3
 Buatlah sebuah script bash yang dapat menghasilkan password secara acak
 sebanyak 12 karakter yang terdapat huruf besar, huruf kecil, dan angka. Password

@@ -23,10 +23,10 @@ Laporan yang diminta berupa:
 </br>c. Tentukan tiga product yang memberikan penjualan(quantity) terbanyak berdasarkan tiga product line yang didapatkan pada soal poin b.
 ### Penyelesaian
 Pada soal ini, hal-hal yang perlu digunakan adalah
-..* awk, karena hal ini berhubungan dengan sebuah data yang akan diambil informasinya, oleh karena itu dibutuhkan awk untuk menyelesaikannya
-..* FS (Field Separator), dengan menggunakan field separator, kita dapat membedakan tiap kolom berdasarkan yang dibutuhkan, dimana pada soal ini menggunakan ","
-..* array\[\], karena dibutuhkan array untuk menyimpan total dari tiap quantity, antar negara, product line, maupun product pada file yang diberikan
-..* sort, pada hal ini sort digunakan untuk mengurutkan quantity agar mendapatkan nilai terbesar pada file
+* awk, karena hal ini berhubungan dengan sebuah data yang akan diambil informasinya, oleh karena itu dibutuhkan awk untuk menyelesaikannya
+* FS (Field Separator), dengan menggunakan field separator, kita dapat membedakan tiap kolom berdasarkan yang dibutuhkan, dimana pada soal ini menggunakan ","
+* array\[\], karena dibutuhkan array untuk menyimpan total dari tiap quantity, antar negara, product line, maupun product pada file yang diberikan
+* sort, pada hal ini sort digunakan untuk mengurutkan quantity agar mendapatkan nilai terbesar pada file
 </br>[source code soal 2](soal2.sh)
 ## Soal 3
 Buatlah sebuah script bash yang dapat menghasilkan password secara acak

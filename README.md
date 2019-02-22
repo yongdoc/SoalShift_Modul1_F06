@@ -6,7 +6,7 @@ dienkripsi oleh seseorang menggunakan bash script, file yang dimaksud adalah
 nature.zip. Karena terlalu mudah kalian memberikan syarat akan membuka seluruh
 file tersebut jika pukul 14:14 pada tanggal 14 Februari atau hari tersebut adalah hari
 jumat pada bulan Februari.
-Hint: Base64, Hexdump
+</br>Hint: Base64, Hexdump
 ### Penyelesaian
 Hal pertama yang harus dilakukan adalah
 </br>` unzip nature.zip `
@@ -18,13 +18,9 @@ Hal pertama yang harus dilakukan adalah
 Anda merupakan pegawai magang pada sebuah perusahaan retail, dan anda diminta
 untuk memberikan laporan berdasarkan file WA_Sales_Products_2012-14.csv.
 Laporan yang diminta berupa:
-a. Tentukan negara dengan penjualan(quantity) terbanyak pada tahun
-2012.
-b. Tentukan tiga product line yang memberikan penjualan(quantity)
-terbanyak pada soal poin a.
-c. Tentukan tiga product yang memberikan penjualan(quantity)
-terbanyak berdasarkan tiga product line yang didapatkan pada soal
-poin b.
+</br>a. Tentukan negara dengan penjualan(quantity) terbanyak pada tahun 2012.
+</br>b. Tentukan tiga product line yang memberikan penjualan(quantity) terbanyak pada soal poin a.
+</br>c. Tentukan tiga product yang memberikan penjualan(quantity) terbanyak berdasarkan tiga product line yang didapatkan pada soal poin b.
 ### Penyelesaian
 Pada soal ini, hal-hal yang perlu digunakan adalah
 ..* awk, karena hal ini berhubungan dengan sebuah data yang akan diambil informasinya, oleh karena itu dibutuhkan awk untuk menyelesaikannya
@@ -37,13 +33,10 @@ Buatlah sebuah script bash yang dapat menghasilkan password secara acak
 sebanyak 12 karakter yang terdapat huruf besar, huruf kecil, dan angka. Password
 acak tersebut disimpan pada file berekstensi .txt dengan ketentuan pemberian nama
 sebagai berikut:
-a. Jika tidak ditemukan file password1.txt maka password acak tersebut
-disimpan pada file bernama password1.txt
-b. Jika file password1.txt sudah ada maka password acak baru akan
-disimpan pada file bernama password2.txt dan begitu seterusnya.
-c. Urutan nama file tidak boleh ada yang terlewatkan meski filenya
-dihapus.
-d. Password yang dihasilkan tidak boleh sama.
+</br>a. Jika tidak ditemukan file password1.txt maka password acak tersebut disimpan pada file bernama password1.txt
+</br>b. Jika file password1.txt sudah ada maka password acak baru akan disimpan pada file bernama password2.txt dan begitu seterusnya.
+</br>c. Urutan nama file tidak boleh ada yang terlewatkan meski filenya dihapus.
+</br>d. Password yang dihasilkan tidak boleh sama.
 ### Penyelesaian
 Pada soal ini yang perlu kikta perhatikan adalah file harus terurut mulai dari "password1", "password2", dst. Oleh karena itu kita perlu membuat variabel yang menyimpan counter dari file. Setelah itu dengan menggunakan looping while untuk mengecek apabila ada password yang tidak terisi (misalkan terdapat password1, password3 tapi tidak ada password2 karena telah dihapus sebelumnya), dan apabila ada maka kita menggenerate password baru pada urutan yang tidak terisi. Pada penggunaan random generator, kita menggunakan `/dev/urandom` dengan isinya terdiri atas a-z, A-Z, dan 0-9. Untuk membatasi random generator tersebut, kita menggunakan `head` dengan jumlah karakternya 12 (`c12`).
 </br>[source code soal 3](soal3.sh)
@@ -52,14 +45,11 @@ Lakukan backup file syslog setiap jam dengan format nama file “jam:menit tangg
 bulan-tahun”. Isi dari file backup terenkripsi dengan konversi huruf (string
 manipulation) yang disesuaikan dengan jam dilakukannya backup misalkan sebagai
 berikut:
-a. Huruf b adalah alfabet kedua, sedangkan saat ini waktu menunjukkan
-pukul 12, sehingga huruf b diganti dengan huruf alfabet yang memiliki
-urutan ke 12+2 = 14.
-b. Hasilnya huruf b menjadi huruf n karena huruf n adalah huruf ke
-empat belas, dan seterusnya.
-c. setelah huruf z akan kembali ke huruf a
-d. Backup file syslog setiap jam.
-e. dan buatkan juga bash script untuk dekripsinya.
+</br>a. Huruf b adalah alfabet kedua, sedangkan saat ini waktu menunjukkan ukul 12, sehingga huruf b diganti dengan huruf alfabet yang memiliki rutan ke 12+2 = 14.
+</br>b. Hasilnya huruf b menjadi huruf n karena huruf n adalah huruf ke mpat belas, dan seterusnya.
+</br>c. setelah huruf z akan kembali ke huruf a
+</br>d. Backup file syslog setiap jam.
+</br>e. dan buatkan juga bash script untuk dekripsinya.
 ### Penyelesaian
 Pada soal, kita mengubah urutan huruf a-z dan A-Z berdasarkan jam kita menjalankan script, dari sini kita mengambil jam dengan menggunakan
 </br>`date \"+%H\"`
@@ -73,15 +63,10 @@ Pada soal, kita mengubah urutan huruf a-z dan A-Z berdasarkan jam kita menjalank
 ## Soal 5
 Buatlah sebuah script bash untuk menyimpan record dalam syslog yang memenuhi
 kriteria berikut:
-a. Tidak mengandung string “sudo”, tetapi mengandung string “cron”,
-serta buatlah pencarian stringnya tidak bersifat case sensitive,
-sehingga huruf kapital atau tidak, tidak menjadi masalah.
-b. Jumlah field (number of field) pada baris tersebut berjumlah kurang
-dari 13.
-c. Masukkan record tadi ke dalam file logs yang berada pada direktori
-/home/user/modul1.
-d. Jalankan script tadi setiap 6 menit dari menit ke 2 hingga 30, contoh
-13:02, 13:08, 13:14, dst.
+</br>a. Tidak mengandung string “sudo”, tetapi mengandung string “cron”, erta buatlah pencarian stringnya tidak bersifat case sensitive,sehingga huruf kapital atau tidak, tidak menjadi masalah.
+</br>b. Jumlah field (number of field) pada baris tersebut berjumlah kurang dari 13.
+</br>c. Masukkan record tadi ke dalam file logs yang berada pada direktori/home/user/modul1.
+</br>d. Jalankan script tadi setiap 6 menit dari menit ke 2 hingga 30, contoh13:02, 13:08, 13:14, dst.
 ### Penyelesaian
 Pada soal no.5 yang perlu kita gunakan adalah `awk` dengan menggunakan `\\..\\` untuk menentukan kata apa yang perlu dicari dan menambahkan "!" didepannya untuk kata yang tidak dicari, lalu agar tidak Case-Sensitive (a dan A disamakan) kita tambahkan `grep -i` untuk meng-ignore case nya apakah *uppercase* atau *lowercase*. Untuk mengatur baris yang akan ditunjukkan, kita dapat menggunakan `NF` atau *number of field*.
 </br>Untuk pengerjaan setiap 6 menit dari menit 2 s/d 30, dapat kita gunakan crontab `2-30/6 * * * *`

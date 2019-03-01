@@ -10,7 +10,7 @@ jumat pada bulan Februari.
 ### Penyelesaian
 Hal pertama yang harus dilakukan adalah
 </br>` unzip nature.zip `
-</br>setelah itu setiap file yang terdapat di dalam folder nature di dekripsi dengan menggunakan base64 dan xxd untuk me reverse perintah yang ada, seperti dibawah ini
+</br>setelah itu setiap file yang terdapat di dalam folder nature di dekripsi dengan menggunakan base64, dari hasilnya menjadi sebuah hexadesimal, setelah itu digunakan xxd -r untuk me revert hexadesimal menjadi binary yang mana merupakan bahasa yang digunakan komputer, seperti dibawah ini
 </br>` base 64 -d $name | xxd -r > nature/pictures"$x".jpg`
 </br>Untuk waktu yang ditentukan, kita dapat menggunakan crontab. Karena terdapat 2 kemungkinan, yaitu 14 Februari atau hari jumat pada bulan Februari, maka kita buat 2 crontab untuk ini, `14 14 14 2 *` dan `14 14 * 2 5`
 </br>[source code soal 1](soal1.sh)
